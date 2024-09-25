@@ -1,0 +1,124 @@
+/* App.css */
+
+* {
+  box-sizing: border-box; /* Ensures padding and border are included in total width and height */
+}
+
+body {
+  margin: 0; /* Remove default margin */
+  font-family: 'Arial', sans-serif; /* Set default font */
+  background-color: #e9ecef; /* Light grey background */
+  color: #333; /* Dark text color */
+}
+
+.App {
+  padding: 20px;
+  max-width: 1200px; /* Max width for the app */
+  margin: 0 auto; /* Center the app */
+  background-color: #ffffff; /* White background for the app */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007BFF; /* Primary color for headings */
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+  text-align: center; /* Center navigation */
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px; /* Space between links */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline */
+  color: #007BFF; /* Blue link color */
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Button Styles */
+button {
+  background-color: #007BFF; /* Primary button color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Calendar Styles */
+.rbc-calendar {
+  border: 1px solid #ddd; /* Light border around calendar */
+  background-color: #ffffff; /* White background for calendar */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.rbc-header {
+  background-color: #007BFF; /* Header background color */
+  color: white; /* Header text color */
+  text-align: center; /* Center header text */
+  padding: 10px 0; /* Padding for header */
+}
+
+.rbc-event {
+  background-color: #28a745; /* Green for events */
+  color: white; /* White text color */
+  border-radius: 4px; /* Rounded corners for events */
+  padding: 5px; /* Padding inside events */
+  cursor: pointer; /* Pointer cursor for events */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.rbc-event:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.rbc-selected {
+  background-color: #007BFF; /* Blue background for selected events */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+      padding: 10px; /* Less padding on smaller screens */
+  }
+
+  h1 {
+      font-size: 1.5em; /* Smaller heading on mobile */
+  }
+
+  nav ul {
+      padding: 0;
+      margin: 0; /* Remove margin for the nav list */
+  }
+
+  nav li {
+      margin: 0 5px; /* Reduce margin on smaller screens */
+  }
+
+  .rbc-calendar {
+      height: auto; /* Allow height to be auto on small screens */
+  }
+}
